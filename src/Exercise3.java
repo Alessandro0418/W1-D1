@@ -34,7 +34,7 @@ public class Exercise3 {
         System.out.print("Inserisci il lato 3 del triangolo: ");
         double lato3 = scanner.nextDouble();
 
-        double area = perimetroTriangolo(lato1, lato2, lato3);
+        double area = areaTriangolo(lato1, lato2, lato3);
         System.out.println("Area del triangolo: " + area);
 
         scanner.close();
@@ -46,12 +46,12 @@ public class Exercise3 {
     }
 
     // Ritorna 0 se pari, 1 se dispari
-    public static int pariDispari(int numero) {while ()
+    public static int pariDispari(int numero) {
         return numero % 2;
     }
 
     // Calcola l'area di un triangolo con la formula di Erone
-    public static double perimetroTriangolo(double a, double b, double c) {
+    public static double areaTriangolo(double a, double b, double c) {
         double s = (a + b + c) / 2; // semiperimetro
         return Math.sqrt(s * (s - a) * (s - b) * (s - c));
     }
